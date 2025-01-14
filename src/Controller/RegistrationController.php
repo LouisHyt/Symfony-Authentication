@@ -29,8 +29,8 @@ class RegistrationController extends AbstractController
     public function register(
         Request $request, 
         UserAuthenticatorInterface $userAuthenticator, 
-        #[Autowire(service: 'security.authenticator.form_login.main')]
-        AuthenticatorInterface $authenticator,
+         #[Autowire(service: 'security.authenticator.form_login.main')]
+         AuthenticatorInterface $authenticator,
         UserPasswordHasherInterface $userPasswordHasher,
         EntityManagerInterface $entityManager
     ): Response
